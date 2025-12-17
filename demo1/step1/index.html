@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue/React/Nodejs前端学习交流群</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="background-glow"></div>
+    
+    <!-- 头部 -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">
+                    <!-- Simple SVG placeholder for the logo -->
+                    <svg viewBox="0 0 50 50" width="40" height="40">
+                        <path d="M25,5 C15,5 5,15 5,25 C5,35 15,45 25,45 C35,45 45,35 45,25" fill="none" stroke="white" stroke-width="2" />
+                        <path d="M15,25 Q25,10 35,25" fill="none" stroke="white" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>前端学习交流群</h1>
+                    <p>QQ群：362909884</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 左侧统计 -->
+        <div class="left-stats">
+            <div class="stat-item faded">18</div>
+            <div class="stat-item faded">628</div>
+            <div class="stat-item active">
+                <div class="indicator-dot">
+                    <div class="dot-center"></div>
+                </div>
+                <span class="number">28</span>
+                <div class="stat-detail">
+                    <span class="line"></span>
+                    <span class="text">下属参控股企业28家</span>
+                </div>
+            </div>
+            <div class="stat-item faded">18.9</div>
+            <div class="stat-item faded">1163%</div>
+            <div class="stat-item faded">6947%</div>
+        </div>
+
+        <!-- 中央地球与文本 -->
+        <div class="center-content">
+            <div class="globe-container">
+                    <div class="globe">
+                        <!-- 闪光点（使用 DOM/CSS 做慢速闪烁，叠在 WebGL 画布上） -->
+                        <div class="globe-flash">
+                            <span class="flash-dot" style="--x:18%;--y:30%;--d:0s;"></span>
+                            <span class="flash-dot" style="--x:40%;--y:20%;--d:0.6s;"></span>
+                            <span class="flash-dot" style="--x:60%;--y:35%;--d:1.2s;"></span>
+                            <span class="flash-dot" style="--x:72%;--y:50%;--d:0.9s;"></span>
+                            <span class="flash-dot" style="--x:34%;--y:65%;--d:1.5s;"></span>
+                            <span class="flash-dot" style="--x:20%;--y:48%;--d:0.3s;"></span>
+                            <span class="flash-dot" style="--x:50%;--y:72%;--d:1.0s;"></span>
+                            <span class="flash-dot" style="--x:80%;--y:22%;--d:0.8s;"></span>
+                            <span class="flash-dot" style="--x:45%;--y:45%;--d:1.8s;"></span>
+                            <span class="flash-dot" style="--x:30%;--y:40%;--d:1.3s;"></span>
+                        </div>
+                    </div>
+                    <!-- 点模拟 -->
+                    <div class="globe-dots"></div>
+            </div>
+            <div class="hero-text">
+                <h2>大道至简 数往知来</h2>
+                <p>创新 · 突破 · 发展 · 共赢</p>
+            </div>
+            <div class="view-more">
+                <div class="circle-btn">
+                    <div class="small-dot"></div>
+                </div>
+                <span>查看更多</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚控件 -->
+    <footer>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="slider-controls">
+            <span class="current">01</span>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <span class="total">04</span>
+            <div class="play-btn">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
